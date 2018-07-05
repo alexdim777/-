@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+        <meta charset="utf-8"> 
+        <title>верстка обучение</title>
+        <link href="styles/style.css" rel="stylesheet" type="text/css">  <!--ссылка на style.css где определен стиль,это один из 3 способов задания стиля-->
+        <style>
+                body { margin: 0 avto;
+                       width: 1308px; }                                  /*ширина рамки в которую заключено содержимое body */
+                .header, .middle, .footer, #content {
+                       border: 1px solid rgb(167, 16, 16) 
+                }
+                .header > div {display: inline-block;}                     /* элементы хедера установили блоками а не строчно */
+                .sidebar { width: 300px;}                                  /* ширина боковых блоков у middle                  */
+                .sidebar.left {                                            /* размещение блока sidebar left слева             */
+                    float: left;
+                }
+                .sidebar.right {                                            /* размещение блока sidebar right справа            */
+                    float: right;
+                }
+                #content {
+                    width: 600px;                                           /* ширина блока content 600 пикселей                 */
+                    float: left;                                            /* текст блока располагать от левого края */
+                }
+                .footer {
+                    clear: both;
+                }
+                .adv, .social, .promo {
+                    background-color: gainsboro;
+                    margin-top: 30px;
+                    height: 280;
+                    width: 300px;
+                    text-align: center;
+                }
+                .navig ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0; 
+                }
+                .navig ul li {
+                    padding: 0 30px;
+                }
+                .navig ul li:hover {                                        /* при наведении курсором на строчки блока navig, строчка окр в черный цвет */
+                    background-color: rgb(14, 9, 1)
+                }
+
+        </style>
+  </head>
+      <body>
+          <div class="header">                                           <!--шапка состоит: логотип, поиск, номер телефона -->
+                <div class="logo">Logo</div>
+                <div class="seach-box">Поиск</div>                       <!--                                                   -->
+                <div class="contakt">тел. 8 900 255 0 762</div>
+          </div>
+          <div class="middle">                                           <!--центальная часть страницы будет состоять из:левой и правой колонки блоков-->
+                <div class="sidebar left">                               <!--левая колонка блоков: навигация и промо -->
+                    <div class="navig">                                  <!--навигация состоит из пунктов которые отсылают пользователя -->
+                        <ul>
+                            <a href="#"><li>Главная</li></a>
+                            <a href="#"><li>Магазины</li></a>
+                            <a href="#"><li>Рецепты</li></a>                       <!--это пункты навигации -->
+                            <a href="#"><li>Ну не главная</li></a>
+                            <a href="https://www.youtube.com/watch?v=NxNPnE47l_8"><li>не заморачивайся</li></a>
+                            <a href="https://www.youtube.com/watch?v=KD8R1eu4ITw"><li>Шутки</li></a>
+                        </ul>
+
+                    </div>
+                    <div class="promo">Promo</div>                       <!--блок промо -->
+                </div>
+                <div class="sidebar right">                              <!-- правая колонка блоков -->
+                    <div class="adv">Реклама 300х280</div>               <!-- блок реклама -->
+                    <div class="social">VKontakte</div>                  <!-- блок соц сети -->                                                                                                                                                                                                                         
+                </div>                                                   <!--               -->                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+                <div id="content">                                                                                                                                                                                                              
+                    <h1>Наша фирма рада Вам предложить</h1>              <!-- заголовок страницы -->                                                                                                                                                        
+                    <p>                                                  <!-- текст контента -->
+                        "...На краю дороги стоял дуб. Он был, вероятно, в десять раз старше берез, составлявших лес, в десять раз толще и в два раза выше каждой березы.
+                           
+                    </p>
+                    <p>                        
+                        Уже было начало июня, когда князь Андрей, возвращаясь домой, въехал опять в ту березовую рощу, в которой этот старый, корявый дуб так странно и памятно поразил его. «Здесь, в этом лесу, был этот дуб, с которым мы были согласны.
+                         
+                    </p>
+                </div>
+          </div>
+          <div class="footer">Footer</div>                                  <!-- foot - нога, т е footer- завершение страницы -->
+        
+     
+
+      </body>                                                                                                                                                                                                                                                                                       
+      
+</html>     
