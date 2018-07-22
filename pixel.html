@@ -3,52 +3,87 @@
 <html>
   <head>
         <meta charset="utf-8"> 
-        <title>верстка обучение</title>
+        <title>верстка обучение 2</title>
         <link href="styles/style.css" rel="stylesheet" type="text/css">  <!--ссылка на style.css где определен стиль,это один из 3 способов задания стиля-->
         <style>
-                .obolochka, {
-                    margin-left: 100; margin-right: 100; 
-                    width: auto;
-                }
-                .header, .middle, .footer, {
-                       border: solid rgb(167, 16, 16) 
-                }
-                .header > div {display: inline-block;}                     /* элементы хедера установили блоками а не строчно */
-                .sidebar.left {                                            /* размещение блока sidebar left слева             */
-                    float: left;
-                }
-                .content, {                                            /* размещение блока content справа            */
-                    float: right;
-                }
-                
-                .footer {
-                    clear: both;
-                }
-                .logo, .seach-box, .contakt {
-                    background-color: gainsboro;
-                    
-                    height: 280;
-                    width: 300px;
-                }
-                
+           .header {
+               width: 971px;
+               height: 150px;
+               background: rebeccapurple;
+               margin-left: 340px;
+               display: inline-block;
+           }  
+           .logo, .seach-box, .contakt {
+               width: 310px;
+               height: 130px;
+               background: rgb(47, 47, 128);
+               margin-left: 10px;
+               margin-top: 10px;
+               float: left;
+           } 
+           .middle {
+               width: 971px;
+               height: 700px;
+               background:lawngreen;
+               margin-left: 340px;
+           }
+           .sidebar {
+               width: 310px;
+               height: 680px;
+               margin-left: 10px;
+               margin-top: 10px;
+               background: lawngreen;
+               float: left;
+           } 
+           .block04 {
+               width: 310px;
+               height: 220px;
+               background: rgb(182, 5, 5);
+           }
+           .block07 {
+               width: 310px;
+               height: 220px;
+               margin-top: 240px;
+               background: rgb(182, 5, 5)
+           } 
+           .content-1{
+               width: 630px;
+               height: 105px;
+               margin-top: 10px;
+               margin-left: 10px;
+               float: left;
+               background: rgb(182, 5, 5)
+           }
+           .content-2 {
+               width: 630px;
+               height: 258px;
+               display: inline-block;
+        
+               background: lawngreen;
+               
+           }
+           .block060, .block061, .block062, .block063, .block064, .block065 {
+               width: 130px;
+               height: 90px;
+               margin-top: 10px;
+               margin-left: 10px;
+               float: left;
+               background: rgb(182, 5, 5)
+           }
 
+           .content-3 {
+               width: 630px;
+               height: 250px;
+               float: left; 
+               background: rgb(45, 179, 116)
+           }
                 
-                .navig ul {
-                    list-style: none;
-                    margin: 0;
-                    padding: 0; 
-                }
-                .navig ul li {
-                    padding: 0 30px;
-                }
-                .navig ul li:hover {                                        /* при наведении курсором на строчки блока navig, строчка окр в черный цвет */
-                    background-color: rgb(14, 9, 1)
-                }
+               
 
         </style>
   </head>
       <body>
-        <div class="obolochka">
+        
           <div class="header">                                           <!--шапка состоит: логотип, поиск, номер телефона -->
                 <div class="logo">Logo</div>
                 <div class="seach-box">Поиск</div>                       <!--                                                   -->
@@ -56,28 +91,35 @@
           </div>
           <div class="middle">                                           <!--центальная часть страницы будет состоять из:левой и правой колонки блоков-->
                 <div class="sidebar left">                               <!--левая колонка блоков:  -->
-                    <div class="04">04</div>                                 <!--   блок 04     -->
+                    <div class="block04">04</div>                                 <!--   блок 04     -->
                        
                     
-                    <div class="07">Promo</div>                             <!--  блок 07         -->
+                    <div class="block07">Promo</div>                             <!--  блок 07         -->
                 </div>
-                <div class="content">                              <!-- правая колонка блоков -->
-                    <div class="05">Реклама 300х280</div>               <!-- блок 05 -->
-                    <div class="06">VKontakte</div>                      <!-- блок 06 -->               
-                    <div class="08">08</div>
-                    <div class="09">09</div>                                                                                                                                                                                                          
+                <div class="content-1">05</div>                           
+                <div class="content-2">
+                    <div class="block060">06</div>                 <!-- блок 06 -->  
+                    <div class="block061">06</div>
+                    <div class="block062">06</div>
+                    <div class="block063">06</div>
+                    <div class="block064">06</div>
+                    <div class="block065">06</div>
+                </div>              
+                <div class="content-3">                                     
+                    <div class="block08">08</div>
+                    <div class="block09">09</div>                                                                                                                                                                                                          
                 </div>
-          </div>                                                         <!--               -->
+          </div>                                                                
           <div class="footer">
-                <div class="10">10</div>                                   <!-- четыре блока в футоре-->
-                <div class="11">11</div>
+                <div class="block10">10</div>                                   <!-- четыре блока в футоре-->
+                <div class="block11">11</div>
                 <div class="podfooter">
-                   <div class="12">12</div> 
-                   <div class="13">13</div>
+                   <div class="block12">12</div> 
+                   <div class="block13">13</div>
                 </div>
                 
           </div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
-        </div>        
+                
           
          
         
