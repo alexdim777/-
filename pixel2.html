@@ -1,0 +1,67 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Верстка задание №1 (flexbox)</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;           /* определяет шрифт, размеры букв, размер строк */
+        font-size: 14px;
+        line-height: 22px;
+      }
+      hr {
+        margin: 10px 0;
+      }
+      .content-wrapper {                       /* оболочка */
+        margin: 0 auto;                       /* первый параметр - верх,низ; второй - лево,право */
+        width: 980px;
+      }
+      .header {
+        color: white;
+        display: flex;                      /* об"явление флекс-контейнера                                                      */
+        flex-flow: row nowrap;              /* данное свойство это соединение двух: flex-direction: row  и  flex-wrap: no wrap */
+                                            /* задают направление осн. оси и выстраивают блоки в контейнерн в ряд               */
+        justify-content: space-between;     /* расположение блоков в ряду  https://www.youtube.com/watch?v=s2Y5oFgmm20  */
+      }
+      .header div {
+        background: gray;
+        flex-grow: 2;
+        padding: 14px;
+      }
+      .header div + div {
+        margin-left: 18px;
+      }
+      .header .block-1 {
+        flex-grow: 1;                              /* указывает жадность блока */
+      }
+      .header .block-3 {
+        flex-grow: 3;
+        text-align: right;                          /* положение текста в блоке */
+      }
+      .header .block-3 a, .header .block-3 span {
+        color: white;
+        display: block;                              /* блочное расположение строк a, a, span, в block-3 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <div class="header">
+        <div class="block-1"></div>
+        <div class="block-2"></div>
+        <div class="block-3">
+          <span>+7 (495) 346-21-31</span>
+          <a href="mailto://manager@pixelplus.ru">manager@pixelplus.ru</a>
+          <a href="http://www.pixelplus.ru">www.pixelplus.ru</a>
+        </div>
+      </div>
+      <hr />                                         <!-- чертит линию -->
+      <div class="middle">
+        <div class="left"></div>
+        <div class="center"></div>
+      </div>
+      <hr />
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
