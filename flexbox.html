@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+ <head>
+    <meta charset="utf-8"> 
+    <title>флекси бокс 1</title>
+       <style>
+          body {
+        font-family: Arial, sans-serif;           /* определяет шрифт, размеры букв, размер строк */
+        font-size: 14px;
+        line-height: 22px;
+           }
+        hr {
+        margin: 10px 0;
+           }
+        .content-wrapper {                       /* оболочка */
+        margin: 0 auto;                       /* первый параметр - верх,низ; второй - лево,право */
+        width: 980px;
+        }  
+        .header {
+          display:flex;
+            
+        }
+        .footer {
+        color: white;
+        display: flex;                      /* об"явление флекс-контейнера                                                      */
+        flex-flow: row nowrap;              /* данное свойство это соединение двух: flex-direction: row  и  flex-wrap: no wrap */
+                                            /* задают направление осн. оси и выстраивают блоки в контейнерн в ряд               */
+        justify-content: space-between;     /* расположение блоков в ряду  https://www.youtube.com/watch?v=s2Y5oFgmm20  */
+        }  
+        .footer-1, .footer-2 {
+        color: black;
+        height: 50px;
+        }
+        .footer-1{
+            flex-grow: 2;  
+        }
+        .footer-2 {
+            flex-grow: 1;
+        }
+        
+       </style>
+ </head>
+ <body>
+    <div class="content-wrapper">
+     <div class="header">
+         <div class="block-01"></div>
+         <div class="block-02"></div>
+         <div class="block-03"></div>
+     </div>
+     <div class="footer">
+         <div class="footer-1">
+             <div class="block-11"></div>
+             <div class="block-12"></div>
+         </div>
+         <div class="footer-2">
+             <div class="block-13"></div>
+             <div class="block-14"></div>
+         </div>
+     </div>
+    </div>
+ </body>
