@@ -20,23 +20,39 @@
             
         }
         .footer {
-        color: white;
+        color: rgb(10, 3, 3);  
         display: flex;                      /* об"явление флекс-контейнера                                                      */
         flex-flow: row nowrap;              /* данное свойство это соединение двух: flex-direction: row  и  flex-wrap: no wrap */
                                             /* задают направление осн. оси и выстраивают блоки в контейнерн в ряд               */
         justify-content: space-between;     /* расположение блоков в ряду  https://www.youtube.com/watch?v=s2Y5oFgmm20  */
         }  
         .footer-1, .footer-2 {
-        color: black;
-        height: 50px;
+        display: flex; 
+        background: gray;
+        
+        
         }
         .footer-1{
+            flex-direction: row;
+            justify-content: space-between;
             flex-grow: 2;  
         }
         .footer-2 {
+            flex-direction: column;
+            justify-content: space-between;
             flex-grow: 1;
+            margin-left: 10px;
         }
-        
+        .block11 {
+            flex-grow: 2; 
+            padding: 14px;
+            text-align: left;
+
+        }
+        .block12 {
+            flex-grow: 2;
+            margin-left: 10px;
+        }
        </style>
  </head>
  <body>
@@ -49,6 +65,25 @@
      <div class="footer">
          <div class="footer-1">
              <div class="block-11"></div>
+            <ul>
+                <li>пункт 01</li>
+                <li>пункт 02</li>
+                <li>пункт 03</li>
+      <!--             <li>пункт 04</li>
+                <li>пункт 05</li>
+                <li>пункт 06</li>
+                <li>пункт 07</li>
+                <li>пункт 08</li>
+                <li>пункт 09</li>
+                <li>пункт 10</li>
+                <li>пункт 11</li>
+                <li>пункт 12</li>
+                <li>пункт 03</li>
+                <li>пункт 04</li>    -->
+               
+                
+
+               </ul>                                   
              <div class="block-12"></div>
          </div>
          <div class="footer-2">
