@@ -22,8 +22,12 @@
             }
             .centr {
                 margin-left: 10px;
-                flex-grow: 76;
-                background: grey;
+                flex-grow: 8;
+                background: white;
+             display: flex;
+             flex-direction: column;
+             flex-wrap: wrap;
+             justify-content: space-between; 
             }
             .leftbar {
                 display: flex;
@@ -40,6 +44,35 @@
             ul {list-style: none}
             .block-07 {
                 min-height: 150px;
+            }
+            .content-1, .content-2, .content-3 {
+                flex-grow: 2;
+                background: rgb(177, 175, 175);
+        
+            }
+            .content-2, .content-3 {
+                margin-top: 10px;
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+             justify-content: start;
+             background: white;
+            }
+            .content-2 {  flex-grow: 2; margin-top: 10px;}
+            .content-2 div+div {
+                margin-left: 10px;
+               
+            }
+            .block-08, .block-09 {
+                flex-grow: 2;
+                background: rgb(177, 175, 175);
+            }
+            .block-09 {margin-left: 10px;}
+            .block-061,.block-062,.block-063,.block-064,.block-065,.block-066,.block-067{
+                
+                background: rgb(177, 175, 175);
+                width: 150px;
+                height: 150px;
             }
          </style>
  </head>
@@ -68,8 +101,20 @@
 
          <div class="centr">
              <div class="content-1"></div>
-             <div class="content-2"></div>
-             <div class="content-3"></div>
+             <div class="content-2">
+                 <div class="block-061"></div>
+                 <div class="block-062"></div>
+                 <div class="block-063"></div>
+                 <div class="block-064"></div>
+                 <div class="block-065"></div>
+                 <div class="block-066"></div>
+                 <div class="block-067"></div>
+             </div>
+             <div class="content-3">
+                 <div class="block-08"></div>
+                 <div class="block-09"></div> 
+             </div>
+
          </div>
      </div>
  </body>
